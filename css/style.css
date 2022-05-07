@@ -73,7 +73,6 @@ main {
 }
 
 header {    
-    overflow: hidden;
     background-color: rgb(0, 0, 0);
     width: 100%;
 }
@@ -144,6 +143,8 @@ h4 {
 }
 
 .header__nav{
+    display: flex;
+    justify-content: space-between;
     width: 85%;
     margin: auto;
 }
@@ -175,10 +176,21 @@ h4 {
 } 
 
 .header__navegador{
-    display: block;
-    justify-content: end;
-    float: right;
     padding: 1rem 0.5rem;
+}
+
+.header__boton_desplegable{
+    background-color: rgb(190, 118, 58);
+    border: none;
+    font-size: 1rem;
+    padding:15px;
+    height: 2.5rem;
+    border-radius: 20px;
+    line-height: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    display: none;
 }
 
 a {
@@ -236,12 +248,103 @@ a {
     
 }
 
+@media only screen and (max-width: 840px){
+    main{
+        background-color: black;
+    }
+    h4{
+        font-size: 1.1rem;        
+    }
+    .main_video--contenedor{
+        min-width: 18rem;
+        min-height: 9.2rem;
+        
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .page__subtitle{
+        top: 75%;
+        right: 0%;
+        left: 0%;
+    }
+
+    .page__title{
+        top: 20%;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    .header__navegador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(53, 53, 53, 0.637);
+        position: absolute;
+        top: 18%;
+        width: 30%;
+        height: 100%;
+        z-index: 100;
+
+        left: 100%;
+        transition: left 0.8s;
+    }
+
+    .header__navegador--visible{
+        left:70% ;
+    }
+
+    .botonesheader{
+        padding-top: 30%;
+    }
+    
+    .header__boton_desplegable{
+        display: block;
+    }
+    
+}
 
 
 
 @media only screen and (max-width: 540px){
+    *{
+        font-size: 14px ;
+    }
+
     main {
         background-color: blueviolet;
+        padding: 8.5rem 10px 0px;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+    .page__title{
+        top: 20%;
+        left: 0;
+        right: 0;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 6rem;
+    }
+    
+    .header__index{
+        position: fixed;
+    }
+
+    .header__nav{
+        flex-direction: column;
+    }
+
+    .botonesheader{
+        width: max-content;
     }
 }
 
