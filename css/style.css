@@ -314,37 +314,148 @@ a {
         font-size: 14px ;
     }
 
-    main {
-        background-color: blueviolet;
-        padding: 8.5rem 10px 0px;
-    }
-
-    h1{
-        font-size: 2.5rem;
-    }
-    .page__title{
-        top: 20%;
-        left: 0;
-        right: 0;
-    }
+/* ----------------  H E A D E R  ------------------------------------- */
 
     header {
         position: fixed;
         top: 0;
         left: 0;
-        height: 6rem;
+        height: 5rem;
+        z-index: 100;
     }
     
     .header__index{
         position: fixed;
+        height: 5px;
     }
 
     .header__nav{
         flex-direction: column;
     }
 
-    .botonesheader{
-        width: max-content;
+    .header__logo--celu {
+        height: 4.5rem;
+        margin-top: .5rem;
     }
+
+    .header__loginbtn{
+        display: flex;
+        align-items: center;
+        margin-top: 1.3rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .header__buscador--input{
+        width: fit-content;
+        margin-right: 15rem;
+        max-width: 30%;
+    }    
+
+    .header__boton_desplegable{
+        display: flex;
+        align-items: center;
+        width: 2rem;
+        justify-content: center;
+        border: solid rgba(136, 80, 35, 0.678);
+        margin-left: 5.2rem;
+        margin-top: -3.4rem;
+    }
+
+/* ----------------------------- B O D Y -------------------------------- */
+
+main {
+    margin-top: 5rem;
+    padding-top: .3rem;
+    width: 100%;
+    height: fit-content;
 }
+
+.page__foto{
+    width: 73.3%;
+    z-index: 40;
+}
+
+.page__title{
+    top: 12%;
+    right: 25%;
+    left: -2%;
+    z-index: 50;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.page__subtitle{
+    top: 25%;
+    right: 25%;
+    left: -2%;
+    z-index: 50;
+}
+
+h2{
+    font-size: 0.9rem;
+}
+
+.main__btn {
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    z-index: 50;
+}
+
+.quieroinscribirme{
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.video{
+    display: block;
+}
+
+.main__video{
+    width: 20.5rem;
+}
+
+.main__videodescription{
+    width: 20.2rem;
+    height:fit-content;
+}
+
+
+
+/* ------------------------ F O O T E R ------------------------------------------ */
+
+footer{
+    width: 100%;
+}
+
+.footer__escrito{
+    display: flex;
+    justify-content: left;    
+    height: fit-content;
+    align-content: center;
+}
+
+.botonesfooter{
+    font-size: 0.8rem;
+}
+
+.footer__disclaimer{
+    font-size: 0.7rem;
+    display: flex;
+}
+
+/* no puedo poner el disclaimer bajo las redes sociales en el footer */
+
+
+
+
+}
+
+
 
