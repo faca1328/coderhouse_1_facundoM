@@ -211,6 +211,29 @@ a {
 }
 
 
+/* -------------- pag LOGIN ----------------------- */
+
+.main__login{
+    height: 100%;
+}
+
+.main_input{
+    align-items: center;
+    margin: 2rem 10rem;
+    padding: 0.5rem 5rem;
+
+}
+
+.main__page{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
 @media only screen and (max-width: 1210px){
     main{
         background-color: aqua;
@@ -245,7 +268,7 @@ a {
         top: 65%;
         left: 38%;
     }
-    
+
 }
 
 @media only screen and (max-width: 840px){
