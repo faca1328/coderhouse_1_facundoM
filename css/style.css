@@ -70,6 +70,7 @@ h2 {
 
 main {
     background-color: black;
+    
 }
 
 header {    
@@ -208,27 +209,29 @@ a {
 .botonesheader:hover {
     background-color: rgb(207, 135, 76) ;
     border-radius: 2rem;
+    cursor:pointer;
 }
 
 
 /* -------------- pag LOGIN ----------------------- */
 
-.main__login{
-    height: 100%;
+.form-floating{
+    margin: 3rem 3rem;
 }
 
-.main_input{
-    align-items: center;
-    margin: 2rem 10rem;
-    padding: 0.5rem 5rem;
-
+.input__btn{
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+    background-color: rgb(187, 114, 53);
 }
 
-.main__page{
-    display: flex;
-    flex-direction: column;
+.input__btn:hover{
+    background-color: rgb(207, 135, 76);
+    box-shadow: 0px 0px 10px rgba(249, 255, 195, 0.959), 0px 0px 10px rgb(253, 252, 198);
+    cursor: pointer;
 }
-
 
 
 
