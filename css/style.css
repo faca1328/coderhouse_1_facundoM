@@ -216,7 +216,7 @@ a {
 /* -------------- pag LOGIN ----------------------- */
 
 .form-floating{
-    margin: 3rem 3rem;
+    padding: 3rem 3rem;
 }
 
 .input__btn{
@@ -233,7 +233,17 @@ a {
     cursor: pointer;
 }
 
+.etiqueta__imput{
+    color: #fff;
+}
 
+.container-fluid{
+    background-color: rgb(21, 41, 44);
+}
+
+.form-control{
+    padding: 0.8rem 1rem;
+}
 
 
 
