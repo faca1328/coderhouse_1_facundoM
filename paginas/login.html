@@ -37,10 +37,13 @@
     </header>
 
     <main class="main__login">
-        <section>
-            <input type="text" class="main_input">usuario
-            <input type="text" class="main_input">contraseña
-            <input type="submit" value="iniciar sesion">
+        <section class="form__login">
+            <label class="form__login--etiqueta">Usuario</label>
+            <input type="text" class="main_input form__login--usuario" placeholder="Usuario">
+            <label class="form__login--etiqueta">Contraseña</label>
+            <input type="password" class="main_input form__login--contraseña" placeholder="Contraseña">
+            <p><a href="#">¿Olvidaste tu Contraseña?</a></p>
+            <input type="submit" value="iniciar sesion" class="form__login--submit">
         </section>
     </main>
 
