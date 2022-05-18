@@ -20,13 +20,13 @@
             </div>
             <nav class="header__nav">
                 <div class="header__loginbtn--padre">
-                    <a href="../paginas/login.html" target="_blank"><button class="header__loginbtn">Login</button></a>
+                    <a href="login.html" target="_blank"><button class="header__loginbtn">Login</button></a>
                 </div>
                 <div class="header__buscador">
                     <input type="text" class="header__buscador--input">Buscar
                 </div>
                 <button class="header__boton_desplegable"><i class="fa-solid fa-bars"></i></i></button>
-                <ul class="header__navegador">
+                <ul class="header__navegador header__navegador--visible">
                     <li class="botonesheader"><a href="eventos.html">Eventos</a></li>
                     <li class="botonesheader"><a href="capacitacion.html">Capacitacion</a></li>
                     <li class="botonesheader"><a href="contactanos.html">Contactanos</a></li>
@@ -45,15 +45,23 @@
                 </h4>
             </div>
         </section>
-        <section class="main__contactanos--formulario">
-            <input class="contactanos__input" type="text">Nombre
-            <input class="contactanos__input" type="text">Mail
-            <textarea name="dejanos tu comentario" cols="30" rows="10"></textarea>
-            <button>Enviar Mensaje</button>
-            <div class="contactanos__mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.503311437639!2d-58.44555769033341!3d-34.59779741325034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0ae44e3f25%3A0xd37d5de5af65697c!2sAvenida%20Corrientes%205506-5560!5e0!3m2!1ses-419!2sar!4v1650064849917!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="main__formulario--contenedor">
+            <div class="main__formulario">
+                <label class="form__form--etiqueta">Nombre</label>
+                <input class="contactanos__input" type="text">
+                <label class="form__form--etiqueta">Mail</label>
+                <input class="contactanos__input" type="text">
+                <label class="form__form--etiqueta">Mensaje</label>
+                <textarea class="contactanos__input" name="dejanos tu comentario" cols="30" rows="10"></textarea>
+                <button class="form__btn">Enviar Mensaje</button>
+            </div>
+            <div class="main__logo--formulario">
+                <img src="../recursos/logo.jpg" alt="logo" class="logo__formulario">
             </div>
         </section>
+        <div class="contactanos__mapa--contenedor">
+            <iframe class="contactanos__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.503311437639!2d-58.44555769033341!3d-34.59779741325034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0ae44e3f25%3A0xd37d5de5af65697c!2sAvenida%20Corrientes%205506-5560!5e0!3m2!1ses-419!2sar!4v1650064849917!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
 
     <footer>

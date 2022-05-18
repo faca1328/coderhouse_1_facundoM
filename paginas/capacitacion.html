@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shorcut icon" type="png" href="recursos/android-icon-36x36.png">
+    <link rel="shorcut icon" type="png" href="../recursos/android-icon-36x36.png">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-widsth, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/8c75121902.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
     <title>FotoProWeb</title>  
 </head>
 <body>
     <header>
-        <section class="header__logo">
-            <img src="../recursos/logo.jpg" alt="logo" height="100px">
+        <section class="header__index">
+            <div class="header__logo">
+                <img src="../recursos/logo.jpg" alt="logo" height="100px" class="header__logo--celu">
+            </div>
+            <nav class="header__nav">
+                <div class="header__loginbtn--padre">
+                    <a href="login.html" target="_blank"><button class="header__loginbtn">Login</button></a>
+                </div>
+                <div class="header__buscador">
+                    <input type="text" class="header__buscador--input">Buscar
+                </div>
+                <button class="header__boton_desplegable"><i class="fa-solid fa-bars"></i></i></button>
+                <ul class="header__navegador header__navegador--visible">
+                    <li class="botonesheader"><a href="eventos.html">Eventos</a></li>
+                    <li class="botonesheader"><a href="capacitacion.html">Capacitacion</a></li>
+                    <li class="botonesheader"><a href="contactanos.html">Contactanos</a></li>
+                </ul>
+            </nav>
         </section>
-        <nav>
-            <div class="header__loginbtn">
-                <a href="login.html" target="_blank"><button>Login</button></a>
-            </div>
-            <div class="header__buscador">
-                <input type="text">Buscar
-            </div>
-            <ul class="header__navegador">
-                <li class="botonesheader"><a href="../index.html">Inicio</a></li>
-                <li class="botonesheader"><a href="eventos.html">Eventos</a></li>
-                <li class="botonesheader"><a href="capacitacion.html">Capacitacion</a></li>
-                <li class="botonesheader"><a href="contactanos.html">Contactanos</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section>

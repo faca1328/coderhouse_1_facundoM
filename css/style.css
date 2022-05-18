@@ -56,14 +56,16 @@ h2 {
     text-align: center;
     position: absolute;
     top: 40%;
-    left: 23%;  
+    left: 0%;  
+    right: 0%;
 }
 
 .page__subtitle{
     text-align: center;
     position: absolute;
     top: 68%;
-    left: 8%;
+    left: 0%;  
+    right: 0%;
     color: aliceblue;
     text-shadow: 3px 3px 2px black;
     text-shadow: 3px 3px 2px black;
@@ -90,7 +92,8 @@ footer {
     text-align: center;
     position: absolute;
     top: 90%;
-    left: 45%;
+    left: 0%;  
+    right: 0%;
 }
 
 .quieroinscribirme {
@@ -274,7 +277,7 @@ a {
     text-align: center;
     position: absolute;
     top: 70%;
-    left: 5%;
+    left: 4%;
     text-shadow: 5px 5px 2px black;
 }  
 
@@ -284,6 +287,62 @@ a {
     color: rgb(255, 165, 55);
 }
 
+.main__formulario--contenedor{
+    padding: 1rem 2.5rem;
+    color: #fff;
+}
+
+.main__formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactanos__input{
+    font-family: Karla;
+    background-clip: padding-box;
+    width: 100%;
+    padding: 0.5rem 0.4rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.form__form--etiqueta{
+    margin: 0;
+    padding: 0;
+    font-family: Karla;
+    font-weight: 500;
+}
+
+.main__formulario--contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form__btn{  
+    padding: 0.5rem;
+    margin: 0.7rem;
+    justify-content: center;
+    background-color: rgb(207, 135, 76) ;
+    border-radius: 40px;
+}
+
+.form__btn:hover{
+    background-color: rgb(190, 118, 58);
+    cursor: pointer;
+}
+
+.contactanos__mapa--contenedor{
+    margin-left: 2.5rem;
+    margin-top: 0;
+    padding-top: 0;
+    margin-right: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.contactanos__mapa{
+    width: 100%;
+}
 
 
 
@@ -302,15 +361,16 @@ a {
     }
     .page__title{
         top: 29%;
-        left: 0;
-        right: 0;
+        left: 0%;  
+        right: 0%;
     }
     h1{
         font-size: 4.3rem;
     }
     .page__subtitle{
-        top: 65%;
-        right: 10%;
+        top: 69%;
+        left: 0%;  
+        right: 0%;
         padding: 0.5rem;
     }
     h2 {
@@ -318,7 +378,8 @@ a {
     }
     .main__btn {
         top: 55%;
-        left: 38%;
+        left: 0%;  
+        right: 0%;
     }
 
     .botonesheader{
@@ -423,20 +484,20 @@ a {
 /* ----------------  H E A D E R  ------------------------------------- */
 
     header {
-        position: fixed;
         top: 0;
-        left: 0;
+        position: fixed;
         height: 5rem;
         z-index: 100;
     }
     
     .header__index{
-        position: fixed;
         height: 5px;
     }
 
     .header__nav{
         flex-direction: column;
+        margin: 0%;
+        display: flex;
     }
 
     .header__logo--celu {
@@ -449,13 +510,17 @@ a {
         align-items: center;
         margin-top: 1.3rem;
         margin-right: 0;
-        margin-left: 0;
+        margin-left: 2rem;
+    }
+
+    .header__buscador{
+        margin-left: 4rem;
+        width: max-content;
+        line-height: 2.5rem;
     }
 
     .header__buscador--input{
         width: fit-content;
-        margin-right: 15rem;
-        max-width: 30%;
     }    
 
     .header__boton_desplegable{
@@ -464,8 +529,8 @@ a {
         width: 2rem;
         justify-content: center;
         border: solid rgba(136, 80, 35, 0.678);
-        margin-left: 5.2rem;
-        margin-top: -3.4rem;
+        margin-left: 8rem;
+        margin-top: -rem;
     }
 
     .header__navegador{
