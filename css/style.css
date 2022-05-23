@@ -98,6 +98,90 @@ a {
   background-color: #cf874c;
   border-radius: 2rem; }
 
+@media only screen and (max-width: 1210px) {
+  body {
+    background-color: aqua; }
+  .main_video--contenedor {
+    width: 90%;
+    padding: 0%;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    min-width: 27rem;
+    min-height: 19rem; }
+  h4 {
+    font-size: 1.1rem; }
+  .page__title {
+    top: 29%;
+    left: 0%;
+    right: 0%; }
+  h1 {
+    font-size: 4.3rem; }
+  .page__subtitle {
+    top: 69%;
+    left: 0%;
+    right: 0%;
+    padding: 0.5rem; }
+  h2 {
+    font-size: 1.3rem; }
+  .main__btn {
+    top: 55%;
+    left: 0%;
+    right: 0%; }
+  .botonesheader {
+    display: inline-block;
+    padding: 0.5rem 1rem; }
+  .footer__escrito {
+    justify-content: space-evenly;
+    align-items: center; } }
+
+/* -------------------------- T A B L E T ----------------------------------- */
+@media only screen and (max-width: 840px) {
+  h4 {
+    font-size: 1.1rem; }
+  .main_video--contenedor {
+    min-width: 18rem;
+    min-height: 9.2rem; }
+  h2 {
+    font-size: 1.1rem; }
+  .page__subtitle {
+    top: 75%;
+    right: 0%;
+    left: 0%; }
+  .page__title {
+    top: 20%; }
+  h1 {
+    font-size: 4rem; }
+  .header__boton_desplegable {
+    display: block; }
+  .header__navegador {
+    position: absolute;
+    background-color: rgba(105, 105, 105, 0.708);
+    flex-direction: column;
+    z-index: 100;
+    align-items: center;
+    width: 10rem;
+    right: 0%;
+    top: 5.2rem;
+    height: 50%;
+    justify-content: space-around;
+    display: none; }
+  .header__navegador--visible {
+    display: flex; }
+  /* -------------- pag LOGIN ----------------------- */
+  .main_input {
+    width: auto !important; }
+  .form__login {
+    padding: auto !important; } }
+
+/* -------------- pag CONTACTANOS ----------------------- */
+.main__logo--formulario {
+  display: none; }
+
+/* -------------------------- C E L U L A R ------------------------------------- */
+@media only screen and (max-width: 540px) {
+  * {
+    font-size: 14px; } }
+
 * {
   font-family: 'Cabin', sans-serif;
   font-weight: bold;
@@ -195,7 +279,7 @@ h4 {
 .main_input {
   font-family: Karla;
   background-clip: padding-box;
-  width: 100%;
+  width: 30rem;
   padding: 1rem 0.8rem;
   border-radius: 5px;
   margin-top: 0.5rem;
