@@ -2,6 +2,10 @@
 
 
 @media only screen and (max-width: 1210px){
+
+    body{
+        background-color: aqua;
+    }
     
     .main_video--contenedor{
         width: 90%;
@@ -50,10 +54,11 @@
 
 }
 
+/* -------------------------- T A B L E T ----------------------------------- */
+
+
 @media only screen and (max-width: 840px){
-    main{
-        background-color: black;
-    }
+
     h4{
         font-size: 1.1rem;        
     }
@@ -127,164 +132,12 @@
 
 
 
-
+/* -------------------------- C E L U L A R ------------------------------------- */
 
 
 @media only screen and (max-width: 540px){
     *{
         font-size: 14px ;
     }
-
-
-/* ----------------  H E A D E R  ------------------------------------- */
-
-    header {
-        top: 0;
-        position: fixed;
-        height: 5rem;
-        z-index: 100;
-    }
-    
-    .header__index{
-        height: 5px;
-    }
-
-    .header__nav{
-        flex-direction: column;
-        margin: 0%;
-        display: flex;
-    }
-
-    .header__logo--celu {
-        height: 4.5rem;
-        margin-top: .5rem;
-    }
-
-    .header__loginbtn{
-        display: flex;
-        align-items: center;
-        margin-top: 1.3rem;
-        margin-right: 0;
-        margin-left: 2rem;
-    }
-
-    .header__buscador{
-        margin-left: 4rem;
-        width: max-content;
-        line-height: 2.5rem;
-    }
-
-    .header__buscador--input{
-        width: fit-content;
-    }    
-
-    .header__boton_desplegable{
-        display: flex;
-        align-items: center;
-        width: 2rem;
-        justify-content: center;
-        border: solid rgba(136, 80, 35, 0.678);
-        margin-left: 8rem;
-        margin-top: -rem;
-    }
-
-    .header__navegador{
-        left: 0%;
-        display: none;
-        height: fit-content;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .header__navegador--visible{
-        display: flex;
-    }
-
-    
-
-/* ----------------------------- B O D Y -------------------------------- */
-
-main {
-    margin-top: 5rem;
-    padding-top: .3rem;
-    width: 100%;
-    height: fit-content;
-}
-
-.page__foto{
-    width: 73.3%;
-    z-index: 40;
-}
-
-.page__title{
-    top: 12%;
-    right: 25%;
-    left: -2%;
-    z-index: 50;
-}
-
-h1{
-    font-size: 2.5rem;
-}
-
-.page__subtitle{
-    top: 25%;
-    right: 25%;
-    left: -2%;
-    z-index: 50;
-}
-
-h2{
-    font-size: 0.9rem;
-}
-
-.main__btn {
-    position: absolute;
-    top: 40%;
-    left: 18%;
-    z-index: 50;
-}
-
-.quieroinscribirme{
-    display: flex;
-    height: 2rem;
-    justify-content: center;
-    align-items: center;
-    z-index: 50;
-}
-
-.video{
-    display: block;
-}
-
-.main__video{
-    width: 20.5rem;
-}
-
-.main__videodescription{
-    width: 20.2rem;
-    height:fit-content;
-}
-
-
-
-/* ------------------------ F O O T E R ------------------------------------------ */
-
-footer{
-    display: inline-block;
-}
-
-.footer__escrito{ /* Grid container */  
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 100%;
-}
-
-.footer__disclaimer--padre{
-    grid-column: 1/4;
-}
-
-
-
-
 
 }
