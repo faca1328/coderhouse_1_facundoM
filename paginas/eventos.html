@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-widsth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/8c75121902.js" crossorigin="anonymous"></script>
     <script defer src="index.js"></script>
@@ -36,59 +36,74 @@
         </section>
     </header>
     <main>
-        <section>
-            <img src="../recursos/eventos.gif" alt="eventos">
-            <div>
-                <h4>
+        <section class="container">          
+            <div class="showcase">
+                <h1 class="showcase__title">
                     Enterate de los mejores Eventos y Convocatorias del pais.
-                </h4>
-                <h6>
+                </h1>
+                <p  class="showcase__subtitle">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur alias aliquam optio nemo earum, officia deleniti tempora nobis at modi sequi quisquam numquam beatae esse eveniet quia veniam odit vero.
-                </h6>
+                </p>
             </div>
         </section>
-        <section>
-            <h5>Muestra de Equipos y componentes</h5>
-            <div>
+        <section class="showcase__cards">
+            <div class="showcase__cards--individuales" >
+                <h5>Muestra de Equipos y componentes</h5>
                 <img src="../recursos/evento1equipo.jpg" alt="evento1">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel atque ab ipsa dolor accusamus est molestias dignissimos ex facilis eveniet?
+                </p>
+                <a href="#">Ingresar <i class="fa-solid fa-angles-right"></i></a>
             </div>
-            <div>
-                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi beatae ab et eveniet iure cupiditate quas minima maiores? Enim hic voluptate eos rerum, accusantium sapiente</h6>
+            <div class="showcase__cards--individuales">
+                <h5>Fotografia de la naturaleza y paisajismo</h5>
+                  <img src="../recursos/evento2paisajismo.jpg" alt="evento2">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel atque ab ipsa dolor accusamus est molestias dignissimos ex facilis eveniet?
+                </p>
+                <a href="#">Ingresar <i class="fa-solid fa-angles-right"></i></a>
             </div>
-        </section>
-        <section>
-            <h5>Fotografia de la naturaleza y paisajismo</h5>
-            <div>
-                <img src="../recursos/evento2paisajismo.jpg" alt="evento2">
-            </div>
-            <div>
-                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi beatae ab et eveniet iure cupiditate quas minima maiores? Enim hic voluptate eos rerum, accusantium sapiente</h6>
-            </div>
-        </section>
-        <section>
-            <h5>Compocision creativa de la imagen</h5>
-            <div>
-                <img src="../recursos/evento3creativo.jpeg" alt="evento3">
-            </div>
-            <div>
-                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi beatae ab et eveniet iure cupiditate quas minima maiores? Enim hic voluptate eos rerum, accusantium sapiente</h6>
+            <div class="showcase__cards--individuales">
+                <h5>Compocision creativa de la imagen</h5>
+                    <img src="../recursos/evento3creativo.jpeg" alt="evento3">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel atque ab ipsa dolor accusamus est molestias dignissimos ex facilis eveniet?
+                </p>
+                <a href="#">Ingresar <i class="fa-solid fa-angles-right"></i></a>
             </div>
         </section>
     </main>
     <footer>
-        <section class="footer__logo">
-            <img src="../recursos/logo.jpg" alt="logo" height="100px">
-        </section>
-        <section>
-            <nav>
-                <ul class="footer__nav">
-                    <li class="botonesfooter">Instagram</li>
-                    <li class="botonesfooter">Facebook</li>
-                    <li class="botonesfooter">Telegram</li>
-                </ul>
-            </nav>
-            <div class="footer__disclaimer">
-                <h5>marca registrada y derechos reservados ...</h5>
+        <div class="footer__logo">
+            <img class="footer__logo--hijo" src="../recursos/blur_edges_logo_footer.png" alt="logo" height="100px">
+        </div>
+        <section class="footer__escrito">
+            <div class="botonesfooter">Instagram</div>
+            <div class="botonesfooter">Facebook</div>
+            <div class="botonesfooter">Telegram</div>
+            <div class="footer__disclaimer--padre">
+                <h5 class="footer__disclaimer">marca registrada y derechos reservados ...</h5>
             </div>
         </section>
     </footer>

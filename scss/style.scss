@@ -11,7 +11,9 @@
     box-sizing: border-box;
 }
 
-
+body{
+    background-color: black;
+}
 
 main {
     background-color: black;
@@ -37,9 +39,8 @@ h4 {
     &__foto{
     filter: blur(3px);
     padding: 0%;
-    width: 100%;    
-}
-
+    width: 100%; 
+    } 
     &__title{
     text-align: center;
     position: absolute;
@@ -66,7 +67,7 @@ h4 {
     top: 90%;
     left: 0%;  
     right: 0%;
-}
+} 
 
 .quieroinscribirme {
     font-size: 1rem;
@@ -239,6 +240,80 @@ h4 {
 }
 
 
+
+
+/* -------------- pag EVENTOS ----------------------- */
+
+.showcase{
+    width: 100%;
+    height: 18rem;
+    background: url(../recursos/eventos.gif) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    &__title{
+        font-size: 4rem !important;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+
+    }
+
+    &__subtitle{
+        color: aliceblue;
+        text-shadow: 3px 3px 2px black;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    &__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin: 0.3rem 1rem;
+        margin-bottom: 3rem;
+    
+    }
+
+    &__cards--individuales{
+        background-color: rgb(18, 29, 36) ;
+        padding: 0 0.4rem;
+        border-radius: 10px;
+    }
+
+
+    &__cards img {
+        width: 100%;
+        height: 19rem;  
+    }
+
+    &__cards h5 {
+        @extend .main__contactanos--titulo--hijo ;
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
+    }
+
+    &__cards p{
+        @extend .showcase__subtitle ;
+        padding: 0;
+        padding-bottom: 1rem;
+        padding-top: 0.3rem;
+        font-weight: 500;
+    }
+
+    &__cards a {
+        font-weight: 500;
+        padding: 1rem 0;
+    }
+
+    &__cards i {
+        font-size: 0.7rem;
+    }
+}
 
 
 
