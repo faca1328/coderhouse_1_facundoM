@@ -323,7 +323,7 @@ h4 {
   left: 4%;
   text-shadow: 5px 5px 2px black; }
 
-.main__contactanos--titulo--hijo, .showcase__cards h5 {
+.main__contactanos--titulo--hijo, .showcase__cards h5, .cards__capacitacion h5, .cards__capacitacion--individuales h3 {
   font-family: 'Square Peg';
   font-size: 5rem;
   color: #ffa537; }
@@ -385,40 +385,101 @@ h4 {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.5rem; }
-  .showcase__title {
+  .showcase__title, .showcase__capacitacion h1 {
     font-size: 4rem !important;
     padding-bottom: 2rem;
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem; }
-  .showcase__subtitle, .showcase__cards p {
+  .showcase__subtitle, .showcase__cards p, .cards__capacitacion p, .showcase__capacitacion p, .cards__capacitacion--individuales h6 {
     color: aliceblue;
     text-shadow: 3px 3px 2px black;
     padding-left: 2rem;
     padding-right: 2rem; }
-  .showcase__cards {
+  .showcase__cards, .cards__capacitacion {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     margin: 0.3rem 1rem;
     margin-bottom: 3rem; }
-  .showcase__cards--individuales {
+  .showcase__cards--individuales, .cards__capacitacion--individuales {
     background-color: #121d24;
     padding: 0 0.4rem;
     border-radius: 10px; }
-  .showcase__cards img {
+  .showcase__cards img, .cards__capacitacion img {
     width: 100%;
     height: 19rem; }
-  .showcase__cards h5 {
+  .showcase__cards h5, .cards__capacitacion h5 {
     font-size: 1.8rem;
     padding-bottom: 0.5rem; }
-  .showcase__cards p {
+  .showcase__cards p, .cards__capacitacion p {
     padding: 0;
     padding-bottom: 1rem;
     padding-top: 0.3rem;
     font-weight: 500; }
-  .showcase__cards a {
+  .showcase__cards a, .cards__capacitacion a {
     font-weight: 500;
     padding: 1rem 0; }
-  .showcase__cards i {
+  .showcase__cards i, .cards__capacitacion i {
     font-size: 0.7rem; }
+
+/* -------------- pag CAPACITACION ----------------------- */
+.showcase__capacitacion {
+  width: 100%;
+  height: 18rem;
+  background: url(../recursos/capacitacion.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem; }
+
+.showcase__capacitacion p {
+  padding-top: 5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: cornsilk; }
+
+.banner {
+  background: #121d24;
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  height: 15rem;
+  border-radius: 10px;
+  border-style: dashed double;
+  border-color: antiquewhite;
+  border-width: 0.2rem; }
+  .banner__titulo h2 {
+    color: #be763a;
+    font-family: 'Square Peg';
+    font-size: 3.5rem;
+    font-weight: 550; }
+  .banner__titulo {
+    align-self: center; }
+  .bannercontenido--padre {
+    display: flex;
+    flex-direction: row; }
+  .banner__contenido {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine; }
+
+.banner2 {
+  float: right; }
+
+.cards__capacitacion {
+  grid-template-columns: 1fr 1fr; }
+
+.cards__capacitacion--individuales h3 {
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500; }
+
+.cards__capacitacion--individuales h6 {
+  padding: 0;
+  padding-bottom: 1rem;
+  padding-top: 0.3rem;
+  font-weight: 500; }
