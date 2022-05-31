@@ -365,22 +365,54 @@ h4 {
     align-self: center;
     }   
 
-    &contenido--padre{
-        display: flex;
-        flex-direction: row;
+    &__contenido--padre{
+        padding: 0 2rem;
+        padding-top: 1rem;
     }
 
     &__contenido{
         display: flex;
         flex-direction: column;
-        background-color: aquamarine;
+        color: #fff;
     }
 
 }
 
-.banner2{
-    float: right;
+.banner section{
+    display: flex;
+    justify-content: space-between;
 }
+
+.banner h5{
+    text-shadow: 3px 3px 2px black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: cornsilk;
+}
+
+.banner__contenido--inputs{
+    display: flex;
+    justify-content: center;
+}
+
+
+.banner__contenido--inputs input label{
+    @extend h5 ;
+}
+
+.banner__contenido--inputs label{
+    text-shadow: 3px 3px 2px black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: cornsilk;
+    margin-top: 0.5rem;
+}
+
+.banner__contenido--inputs input{
+    margin-top: 1rem;
+    margin-right: 0.2rem;
+}
+
 
 .cards__capacitacion{
     @extend .showcase__cards ;
