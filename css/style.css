@@ -1,3 +1,5 @@
+/* Paleta de colores */
+/* Fonts */
 footer {
   display: flex;
   overflow: hidden;
@@ -197,7 +199,7 @@ main {
   background-color: black; }
 
 h1 {
-  font-family: 'Square Peg';
+  font-family: "Square Peg";
   font-size: 5rem;
   color: aliceblue;
   text-shadow: 5px 5px 2px black; }
@@ -392,7 +394,7 @@ h4 {
     padding-left: 1rem;
     padding-right: 1rem; }
   .showcase__subtitle, .showcase__cards p, .cards__capacitacion p, .showcase__capacitacion p, .cards__capacitacion--individuales h6 {
-    color: aliceblue;
+    color: cornsilk;
     text-shadow: 3px 3px 2px black;
     padding-left: 2rem;
     padding-right: 2rem; }
