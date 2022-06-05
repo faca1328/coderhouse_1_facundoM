@@ -101,8 +101,7 @@ a {
   border-radius: 2rem; }
 
 @media only screen and (max-width: 1210px) {
-  body {
-    background-color: aqua; }
+  /* ------------------ pag INDEX ----------------------- */
   .main_video--contenedor {
     width: 90%;
     padding: 0%;
@@ -134,25 +133,30 @@ a {
     padding: 0.5rem 1rem; }
   .footer__escrito {
     justify-content: space-evenly;
-    align-items: center; } }
+    align-items: center; }
+  /* -------------- pag CONTACTANOS ----------------------- */
+  .logo__formulario {
+    max-height: 10rem; } }
 
 /* -------------------------- T A B L E T ----------------------------------- */
 @media only screen and (max-width: 840px) {
+  /* ------------------ pag INDEX ----------------------- */
   h4 {
     font-size: 1.1rem; }
   .main_video--contenedor {
     min-width: 18rem;
     min-height: 9.2rem; }
   h2 {
-    font-size: 1.1rem; }
+    font-size: 1rem !important;
+    font-weight: 500 !important; }
   .page__subtitle {
-    top: 75%;
-    right: 0%;
-    left: 0%; }
+    top: 50% !important; }
   .page__title {
-    top: 20%; }
+    top: 20% !important; }
   h1 {
-    font-size: 4rem; }
+    font-size: 3.8rem !important; }
+  .main__btn {
+    top: 70% !important; }
   .header__boton_desplegable {
     display: block; }
   .header__navegador {
@@ -161,28 +165,70 @@ a {
     flex-direction: column;
     z-index: 100;
     align-items: center;
-    width: 10rem;
     right: 0%;
     top: 5.2rem;
     height: 50%;
-    justify-content: space-around;
+    justify-content: space-around; }
+  #menu-check:not(:checked) ~ .header__navegador {
     display: none; }
-  .header__navegador--visible {
+  #menu-check:checked ~ .header__navegador {
     display: flex; }
   /* -------------- pag LOGIN ----------------------- */
   .main_input {
     width: auto !important; }
   .form__login {
-    padding: auto !important; } }
-
-/* -------------- pag CONTACTANOS ----------------------- */
-.main__logo--formulario {
-  display: none; }
+    padding: auto !important; }
+  /* -------------- pag CONTACTANOS ----------------------- */
+  .main__logo--formulario {
+    display: none; } }
 
 /* -------------------------- C E L U L A R ------------------------------------- */
 @media only screen and (max-width: 540px) {
-  * {
-    font-size: 14px; } }
+  .header__index {
+    width: 100%; }
+  .header__nav {
+    width: 100%; }
+  .header__boton_desplegable {
+    margin-top: 0.2rem; }
+  .header__buscador {
+    padding-left: 3rem;
+    width: fit-content;
+    line-height: 0.1rem; }
+  .header__buscador--input {
+    font-size: 0.5rem; }
+  .header__logo--celu {
+    height: 4rem; }
+  .header__loginbtn {
+    font-size: smaller;
+    padding: 0.4rem;
+    margin: 0.4rem; }
+  .header__navegador {
+    top: 4.2rem !important; }
+  /* ------------------ pag INDEX ----------------------- */
+  h2 {
+    font-size: 0.8rem !important;
+    font-weight: 500 !important; }
+  .page__subtitle {
+    top: 30% !important; }
+  .page__title {
+    top: 15% !important; }
+  h1 {
+    font-size: 2.4rem !important; }
+  .main__btn {
+    top: 50% !important; }
+  .quieroinscribirme {
+    padding: 0.3rem !important;
+    font-size: medium !important; }
+  .video {
+    flex-direction: column; }
+  h4 {
+    text-align: center; }
+  .main_video--contenedor {
+    width: 100% !important; }
+  .main__videodescription {
+    height: auto !important;
+    width: auto !important;
+    padding-bottom: 0; } }
 
 * {
   font-family: 'Cabin', sans-serif;
@@ -212,10 +258,14 @@ h4 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem; }
 
+.menu__checkbox--input {
+  display: none; }
+
 .page__foto {
   filter: blur(3px);
   padding: 0%;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .page__title {
   text-align: center;
@@ -230,7 +280,7 @@ h4 {
   top: 68%;
   left: 0%;
   right: 0%;
-  color: aliceblue;
+  color: white;
   text-shadow: 3px 3px 2px black;
   text-shadow: 3px 3px 2px black; }
 
@@ -377,6 +427,10 @@ h4 {
 
 .contactanos__mapa {
   width: 100%; }
+
+.logo__formulario {
+  display: flex;
+  max-height: 30rem; }
 
 /* -------------- pag EVENTOS ----------------------- */
 .showcase {

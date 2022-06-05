@@ -3,9 +3,7 @@
 
 @media only screen and (max-width: 1210px){
 
-    body{
-        background-color: aqua;
-    }
+/* ------------------ pag INDEX ----------------------- */
     
     .main_video--contenedor{
         width: 90%;
@@ -51,6 +49,12 @@
         align-items: center;
     }
 
+/* -------------- pag CONTACTANOS ----------------------- */
+
+
+    .logo__formulario{
+        max-height: 10rem;
+    }
 
 }
 
@@ -59,55 +63,63 @@
 
 @media only screen and (max-width: 840px){
 
+/* ------------------ pag INDEX ----------------------- */
+
     h4{
         font-size: 1.1rem;        
     }
+
     .main_video--contenedor{
         min-width: 18rem;
         min-height: 9.2rem;
         
     }
     h2 {
-        font-size: 1.1rem;
+        font-size: 1rem !important;
+        font-weight: 500 !important;
     }
 
     .page__subtitle{
-        top: 75%;
-        right: 0%;
-        left: 0%;
+        top: 50% !important;
+
     }
 
     .page__title{
-        top: 20%;
+        top: 20% !important;
     }
 
     h1{
-        font-size: 4rem;
+        font-size: 3.8rem !important;
     }
 
-.header__boton_desplegable{
+    .main__btn {
+        top: 70% !important;
+    }
+
+    .header__boton_desplegable{
     display: block;
-}
+    }
 
-.header__navegador{
-    position: absolute;
-    background-color: rgba(105, 105, 105, 0.708);
-    flex-direction: column;
-    z-index: 100;
-    align-items: center;
-    width: 10rem;
-    right: 0%;
-    top: 5.2rem;
-    height: 50%;
-    justify-content: space-around;
-    display: none;
-    
-}
+    .header__navegador{
+        position: absolute;
+        background-color: rgba(105, 105, 105, 0.708);
+        flex-direction: column;
+        z-index: 100;
+        align-items: center;
+        right: 0%;
+        top: 5.2rem;
+        height: 50%;
+        justify-content: space-around;
+        
+    }
 
-.header__navegador--visible{
-    display: flex;
+    #menu-check:not(:checked) ~ .header__navegador{
+        display: none;
+    }
 
-}
+    #menu-check:checked ~ .header__navegador{
+        display: flex;
+    }
 
 /* -------------- pag LOGIN ----------------------- */
 
@@ -120,7 +132,6 @@
     padding: auto !important;
 }
 
-}
 
 
 /* -------------- pag CONTACTANOS ----------------------- */
@@ -130,13 +141,98 @@
 }
 
 
+}
+
 
 /* -------------------------- C E L U L A R ------------------------------------- */
 
 
 @media only screen and (max-width: 540px){
-    *{
-        font-size: 14px ;
+
+.header__index{
+    width: 100%;
+}
+
+.header__nav{
+    width: 100%;
+}
+
+.header__boton_desplegable{
+    margin-top: 0.2rem;
+}
+
+.header__buscador{
+    padding-left:3rem;
+    width: fit-content;
+    line-height: 0.1rem;
+}
+
+.header__buscador--input{
+    font-size: 0.5rem;
+}
+
+.header__logo--celu{
+    height: 4rem;
+}
+
+.header__loginbtn{
+    font-size: smaller;
+    padding: 0.4rem;
+    margin: 0.4rem;
+}
+
+.header__navegador{
+    top: 4.2rem !important;
+}
+    
+/* ------------------ pag INDEX ----------------------- */
+
+h2 {
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+}
+
+.page__subtitle{
+    top: 30% !important;
+
+}
+
+.page__title{
+    top: 15% !important;
+}
+
+h1{
+    font-size: 2.4rem !important;
+}
+
+.main__btn {
+    top: 50% !important;
+}
+
+.quieroinscribirme{
+    padding: 0.3rem !important;
+    font-size:medium !important;
+}
+
+.video {
+    flex-direction: column;
+}
+
+h4{
+    text-align: center;
+}
+
+.main{
+    &_video--contenedor{
+        width: 100% !important;
     }
 
+
+    &__videodescription {
+        height: auto !important;
+        width: auto !important;
+        padding-bottom: 0;
+    }
+
+}
 }
