@@ -136,6 +136,10 @@ a {
   .logo__formulario {
     max-height: 10rem; } }
 
+/* -------------- pag LOGIN ----------------------- */
+.form__login {
+  padding: 3rem 10rem !important; }
+
 /* -------------------------- T A B L E T ----------------------------------- */
 @media only screen and (max-width: 840px) {
   /* ------------------ pag INDEX ----------------------- */
@@ -175,7 +179,7 @@ a {
   .main_input {
     width: auto !important; }
   .form__login {
-    padding: auto !important; }
+    padding: 1.5rem 5rem !important; }
   /* -------------- pag CONTACTANOS ----------------------- */
   .main__logo--formulario {
     display: none; } }
@@ -227,6 +231,10 @@ a {
     height: auto !important;
     width: auto !important;
     padding-bottom: 0; } }
+
+/* -------------- pag LOGIN ----------------------- */
+.main__login {
+  height: 80vh !important; }
 
 * {
   font-family: 'Cabin', sans-serif;
@@ -321,13 +329,18 @@ h4 {
 
 /* -------------- pag LOGIN ----------------------- */
 .main__login {
-  background-color: #121d24; }
+  background-color: #121d24;
+  flex-wrap: wrap;
+  height: 75vh; }
 
 .form__login {
   margin: auto;
   padding: 5rem 18rem;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .main_input {
   font-family: Karla;

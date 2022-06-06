@@ -58,6 +58,14 @@
 
 }
 
+
+/* -------------- pag LOGIN ----------------------- */
+
+
+.form__login{
+    padding: 3rem 10rem !important;
+}
+
 /* -------------------------- T A B L E T ----------------------------------- */
 
 
@@ -129,7 +137,7 @@
 }
 
 .form__login{
-    padding: auto !important;
+    padding: 1.5rem 5rem !important;
 }
 
 
@@ -235,4 +243,11 @@ h4{
     }
 
 }
+}
+
+
+/* -------------- pag LOGIN ----------------------- */
+
+.main__login{
+    height: 80vh !important;
 }

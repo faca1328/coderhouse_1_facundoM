@@ -29,7 +29,8 @@
                 <div class="header__buscador">
                     <input type="text" class="header__buscador--input">Buscar
                 </div>
-                <button class="header__boton_desplegable"><i class="fa-solid fa-bars"></i></i></button>
+                <label class="header__boton_desplegable" for="menu-check"><i for="menu-check" class="fa-solid fa-bars"></i></i></label>
+                <input class="menu__checkbox--input" type="checkbox" id="menu-check">
                 <ul class="header__navegador header__navegador--visible">
                     <li class="botonesheader"><a href="eventos.html">Eventos</a></li>
                     <li class="botonesheader"><a href="capacitacion.html">Capacitacion</a></li>
@@ -46,7 +47,9 @@
             <label class="form__login--etiqueta">Contraseña</label>
             <input type="password" class="main_input form__login--contraseña" placeholder="Contraseña">
             <p><a href="#">¿Olvidaste tu Contraseña?</a></p>
-            <input type="submit" value="iniciar sesion" class="form__login--submit">
+            <div>
+                <input type="submit" value="iniciar sesion" class="form__login--submit">
+            </div>
         </section>
     </main>
 
