@@ -134,11 +134,13 @@ a {
     align-items: center; }
   /* -------------- pag CONTACTANOS ----------------------- */
   .logo__formulario {
-    max-height: 10rem; } }
-
-/* -------------- pag LOGIN ----------------------- */
-.form__login {
-  padding: 3rem 10rem !important; }
+    max-height: 10rem; }
+  /* -------------- pag LOGIN ----------------------- */
+  .form__login {
+    padding: 3rem 10rem !important; }
+  /* ---------------- pag CAPACITACION ----------------------- */
+  .showcase__capacitacion p {
+    padding-top: 0.1rem !important; } }
 
 /* -------------------------- T A B L E T ----------------------------------- */
 @media only screen and (max-width: 840px) {
@@ -148,7 +150,7 @@ a {
   .main_video--contenedor {
     min-width: 18rem;
     min-height: 9.2rem; }
-  h2 {
+  .page__subtitle h2 {
     font-size: 1rem !important;
     font-weight: 500 !important; }
   .page__subtitle {
@@ -180,9 +182,25 @@ a {
     width: auto !important; }
   .form__login {
     padding: 1.5rem 5rem !important; }
-  /* -------------- pag CONTACTANOS ----------------------- */
+  /* ---------------- pag CONTACTANOS ----------------------- */
   .main__logo--formulario {
-    display: none; } }
+    display: none; }
+  /* ------------------ pag EVENTOS ----------------------- */
+  .showcase__cards, .cards__capacitacion {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr !important;
+    margin: 1rem 4rem !important;
+    gap: 1.5rem !important; }
+  /* ---------------- pag CAPACITACION ----------------------- */
+  .showcase__capacitacion p {
+    padding-top: 0.1rem !important; }
+  .banner1 h5, .banner1 .banner__contenido--inputs input label, .banner__contenido--inputs input .banner1 label {
+    margin-right: 1rem; }
+  .banner__contenido div {
+    margin-top: 1rem; }
+  .cards__capacitacion {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr !important; } }
 
 /* -------------------------- C E L U L A R ------------------------------------- */
 @media only screen and (max-width: 540px) {
@@ -207,7 +225,7 @@ a {
   .header__navegador {
     top: 4.2rem !important; }
   /* ------------------ pag INDEX ----------------------- */
-  h2 {
+  .page__subtitle h2 {
     font-size: 0.8rem !important;
     font-weight: 500 !important; }
   .page__subtitle {
@@ -230,11 +248,32 @@ a {
   .main__videodescription {
     height: auto !important;
     width: auto !important;
-    padding-bottom: 0; } }
-
-/* -------------- pag LOGIN ----------------------- */
-.main__login {
-  height: 80vh !important; }
+    padding-bottom: 0; }
+  /* -------------- pag LOGIN ----------------------- */
+  .main__login {
+    height: 80vh !important; }
+  /* ------------------ pag EVENTOS ----------------------- */
+  .showcase__cards, .cards__capacitacion {
+    margin: 1rem 3rem !important;
+    gap: 1rem !important; }
+  .showcase h1 {
+    font-size: 3rem !important; }
+  /* -------------- pag CONTACTANOS ----------------------- */
+  .main__contactanos--titulo--hijo, .showcase__cards h5, .cards__capacitacion h5, .showcase__cards .banner__contenido--inputs input label, .banner__contenido--inputs input .showcase__cards label, .cards__capacitacion .banner__contenido--inputs input label, .banner__contenido--inputs input .cards__capacitacion label, .cards__capacitacion--individuales h3 {
+    font-size: 3.5rem !important; }
+  /* ---------------- pag CAPACITACION ----------------------- */
+  .showcase__capacitacion h1 {
+    font-size: 2.5rem !important; }
+  .showcase__capacitacion p {
+    font-size: 1rem !important; }
+  .banner__titulo h2 {
+    font-size: 2.5rem !important; }
+  .banner__contenido label {
+    font-size: 0.8rem !important; }
+  .banner__contenido h5, .banner__contenido .banner__contenido--inputs input label, .banner__contenido--inputs input .banner__contenido label {
+    font-size: 1rem !important; }
+  .cards__capacitacion--individuales h3 {
+    font-size: 2rem !important; } }
 
 * {
   font-family: 'Cabin', sans-serif;
@@ -453,7 +492,7 @@ h4 {
   align-items: center;
   margin-bottom: 1.5rem; }
   .showcase__title, .showcase__capacitacion h1 {
-    font-size: 4rem !important;
+    font-size: 4rem;
     padding-bottom: 2rem;
     padding-top: 1rem;
     padding-left: 1rem;
@@ -512,13 +551,15 @@ h4 {
   display: flex;
   flex-direction: column;
   width: 97%;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   margin-bottom: 2rem;
   height: 15rem;
   border-radius: 10px;
   border-style: dashed double;
   border-color: antiquewhite;
-  border-width: 0.2rem; }
+  border-width: 0.2rem;
+  height: fit-content; }
   .banner__titulo h2 {
     color: #be763a;
     font-family: 'Square Peg';
@@ -532,7 +573,9 @@ h4 {
   .banner__contenido {
     display: flex;
     flex-direction: column;
-    color: #fff; }
+    color: #fff;
+    margin: 1rem 1rem;
+    align-items: flex-start; }
 
 .banner section {
   display: flex;

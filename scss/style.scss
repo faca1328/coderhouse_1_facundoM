@@ -268,7 +268,7 @@ h4 {
     margin-bottom: 1.5rem;
 
     &__title{
-        font-size: 4rem !important;
+        font-size: 4rem;
         padding-bottom: 2rem;
         padding-top: 1rem;
         padding-left: 1rem;
@@ -360,13 +360,15 @@ h4 {
     display:flex;
     flex-direction: column;
     width: 97%;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     margin-bottom: 2rem;
     height: 15rem;
     border-radius: 10px;
     border-style: dashed double;
     border-color: antiquewhite;
     border-width: 0.2rem;
+    height: fit-content;
 
     &__titulo h2 {
     color: rgb(190, 118, 58);
@@ -388,6 +390,8 @@ h4 {
         display: flex;
         flex-direction: column;
         color: #fff;
+        margin: 1rem 1rem;
+        align-items: flex-start;
     }
 
 }
