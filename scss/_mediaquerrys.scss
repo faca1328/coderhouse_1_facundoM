@@ -17,7 +17,7 @@
         font-size: 1.1rem;        
     }
     .page__title{
-        top: 29%;
+        top: 15% !important;
         left: 0%;  
         right: 0%;
     }
@@ -25,7 +25,7 @@
         font-size: 4.3rem;
     }
     .page__subtitle{
-        top: 69%;
+        top: 50% !important;
         left: 0%;  
         right: 0%;
         padding: 0.5rem;
@@ -34,7 +34,7 @@
         font-size: 1.3rem;
     }
     .main__btn {
-        top: 55%;
+        top: 75% !important;
         left: 0%;  
         right: 0%;
     }
@@ -97,12 +97,12 @@
     }
 
     .page__subtitle{
-        top: 50% !important;
+        top: 40% !important;
 
     }
 
     .page__title{
-        top: 20% !important;
+        top: 15% !important;
     }
 
     h1{
@@ -110,7 +110,12 @@
     }
 
     .main__btn {
-        top: 70% !important;
+        top: 55% !important;
+    }
+
+    .quieroinscribirme{
+        padding: 0.5rem 0.75rem !important;
+
     }
 
     .header__boton_desplegable{
@@ -233,7 +238,6 @@
 .header__navegador{
     top: 4.2rem !important;
 }
-    
 /* ------------------ pag INDEX ----------------------- */
 
 .page__subtitle h2 {
@@ -242,12 +246,12 @@
 }
 
 .page__subtitle{
-    top: 30% !important;
+    top: 25% !important;
 
 }
 
 .page__title{
-    top: 15% !important;
+    top: 12% !important;
 }
 
 h1{
@@ -255,7 +259,7 @@ h1{
 }
 
 .main__btn {
-    top: 50% !important;
+    top: 40% !important;
 }
 
 .quieroinscribirme{
