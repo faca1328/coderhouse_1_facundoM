@@ -306,7 +306,8 @@ h4 {
     }
 
     &__cards h5 {
-        @extend .main__contactanos--titulo--hijo ;
+        font-family:'Square Peg';
+        color: rgb(255, 165, 55);
         font-size: 1.8rem;
         padding-bottom: 0.5rem;
     }

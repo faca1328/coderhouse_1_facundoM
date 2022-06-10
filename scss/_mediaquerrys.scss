@@ -176,6 +176,10 @@
     gap: 1.5rem !important;
 }
 
+.showcase__cards h5 {
+    font-size: 3.5rem !important;
+}
+
 
 /* ---------------- pag CAPACITACION ----------------------- */
 
@@ -242,6 +246,17 @@
 .header__navegador{
     top: 4.2rem !important;
 }
+
+.footer__nav p{
+    font-size: 0.7rem;
+}
+
+.footer__nav a{
+    font-size: 0.7rem;
+}
+
+
+
 /* ------------------ pag INDEX ----------------------- */
 
 .page__subtitle h2 {
@@ -259,7 +274,7 @@
 }
 
 h1{
-    font-size: 2.4rem !important;
+    font-size: 1.8rem !important;
 }
 
 .main__btn {
@@ -303,14 +318,17 @@ h4{
 /* ------------------ pag EVENTOS ----------------------- */
 
 .showcase__cards{
-    margin: 1rem 3rem !important;
+    margin: 1rem 1rem !important;
     gap: 1rem !important;
 }
 
 .showcase h1{
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
 }
 
+.showcase__cards h5 {
+    font-size: 2rem !important;
+}
 
 /* -------------- pag CONTACTANOS ----------------------- */
 
@@ -346,9 +364,21 @@ h4{
     font-size: 1rem !important;
 }
 
+.banner__contenido--padre{
+    padding: 0 0.75rem !important;
+    flex-direction: column;
+}
 
 .cards__capacitacion--individuales h3{
     font-size: 2rem !important;
+}
+
+.banner__contenido--inputs input{
+    margin-top: 0.65rem !important;
+}
+
+.cards__capacitacion{
+    margin: 0.3rem 0.3rem !important;
 }
 
 
