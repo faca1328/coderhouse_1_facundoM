@@ -244,11 +244,11 @@ a {
   .page__subtitle {
     top: 25% !important; }
   .page__title {
-    top: 12% !important; }
+    top: 15% !important; }
   h1 {
     font-size: 1.8rem !important; }
   .main__btn {
-    top: 40% !important; }
+    top: 45% !important; }
   .quieroinscribirme {
     padding: 0.3rem !important;
     font-size: medium !important; }
@@ -257,7 +257,8 @@ a {
   h4 {
     text-align: center; }
   .main_video--contenedor {
-    width: 100% !important; }
+    width: 100% !important;
+    padding: 5vw !important; }
   .main__videodescription {
     height: auto !important;
     width: auto !important;
@@ -280,7 +281,8 @@ a {
     top: 70%; }
   /* ---------------- pag CAPACITACION ----------------------- */
   .showcase__capacitacion h1 {
-    font-size: 2.5rem !important; }
+    font-size: 2.5rem !important;
+    padding-bottom: 1rem !important; }
   .showcase__capacitacion p {
     font-size: 1rem !important; }
   .banner__titulo h2 {
