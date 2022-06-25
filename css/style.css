@@ -119,14 +119,14 @@ a {
   h1 {
     font-size: 4.3rem; }
   .page__subtitle {
-    top: 50% !important;
+    top: 35% !important;
     left: 0%;
     right: 0%;
     padding: 0.5rem; }
   h2 {
     font-size: 1.3rem; }
   .main__btn {
-    top: 75% !important;
+    top: 55% !important;
     left: 0%;
     right: 0%; }
   .botonesheader {
@@ -158,14 +158,10 @@ a {
   .page__subtitle h2 {
     font-size: 1rem !important;
     font-weight: 500 !important; }
-  .page__subtitle {
+  .main__btn {
     top: 45% !important; }
-  .page__title {
-    top: 15% !important; }
   h1 {
     font-size: 3.8rem !important; }
-  .main__btn {
-    top: 65% !important; }
   .quieroinscribirme {
     padding: 0.5rem 0.75rem !important; }
   .header__boton_desplegable {
@@ -196,9 +192,6 @@ a {
     font-size: 4rem !important; }
   .main__formulario--contenedor {
     grid-template-columns: 1fr !important; }
-  /* .main__contactanos--titulo{
-    top: 55% !important;
-} */
   /* ------------------ pag EVENTOS ----------------------- */
   .showcase__cards, .cards__capacitacion {
     grid-template-columns: 1fr !important;
@@ -249,13 +242,13 @@ a {
     font-size: 0.8rem !important;
     font-weight: 500 !important; }
   .page__subtitle {
-    top: 25% !important; }
+    top: 20% !important; }
   .page__title {
-    top: 15% !important; }
+    top: 12% !important; }
   h1 {
     font-size: 1.8rem !important; }
   .main__btn {
-    top: 45% !important; }
+    top: 35% !important; }
   .quieroinscribirme {
     padding: 0.3rem !important;
     font-size: medium !important; }
@@ -310,19 +303,27 @@ a {
 
 @media only screen and (max-width: 370px) {
   .main__btn {
-    top: 52% !important; }
+    top: 37% !important; }
   .video {
     padding-top: 3rem; }
   .main_video--contenedor {
     height: auto !important;
     width: auto !important;
-    padding: 0.1rem !important; }
+    padding: 0.1rem !important;
+    display: flex !important;
+    justify-content: center !important; }
   .main__video {
-    width: fit-content !important; }
+    width: auto !important; }
+  .page__subtitle {
+    top: 20% !important; }
+  .page__title {
+    top: 13% !important; }
   /* ------------------ pag EVENTOS ----------------------- */
   .showcase h1 {
     font-size: 2rem !important;
     justify-self: center !important; }
+  .fa-angles-right {
+    margin-bottom: 0.5rem !important; }
   /* -------------- pag LOGIN ----------------------- */
   .form__login {
     padding: 1.5rem 2rem !important; }
